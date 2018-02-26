@@ -1,0 +1,51 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Customer_Account_UI.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            font-weight: normal;
+        }
+        .auto-style2 {
+            font-weight: normal;
+            text-decoration: underline;
+            color: #0099CC;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <h1 align="center" class="auto-style2"><strong>Welcome to TCS Bank</strong></h1>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <br /> <br />
+          <table class="auto-style1" align="center">
+        <tr>
+            <td>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebForm2.aspx">View all customers</asp:HyperLink>
+            </td>
+            <td>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ViewCustomerbyid.aspx">View customer by id</asp:HyperLink>
+            </td>
+            <td>
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Account.aspx">Add account</asp:HyperLink>
+            </td>
+            <td>
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Viewaccount.aspx">View all accounts</asp:HyperLink>
+            </td>
+            <td>
+                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Customer.aspx">Add customers</asp:HyperLink>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
